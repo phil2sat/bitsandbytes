@@ -70,6 +70,9 @@ else()
     set(BUILD_MPS OFF)
 endif()
 
+set(BUILD_CUDA OFF)
+set(BUILD_HIP ON)
+set(BUILD_MPS OFF)
 
 if(BUILD_CUDA)
     # NVCC normally will only work with MSVC up to 1939. VS2022 17.10+ starts using versions 1940+.
